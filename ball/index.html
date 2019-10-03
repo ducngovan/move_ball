@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <div>
+        <h1>MOVE BALL</h1>
+    </div>
+    <div>
+        <img src="bong.jpg" height="30" width="30" id="ball" style="position:relative; left:0; "/>
+    </div>
+    <div>
+        <button type="button" onclick="getRight()">Right</button>
+        <button type="button" onclick="getLeft()">Left</button>
+    </div>
+
+</div>
+<script>
+    var ball = document.getElementById('ball').style;
+    const num =3;
+    function getRight() {
+         ball.left = parseInt(ball.left) + num + 'px';
+    }
+    function getLeft() {
+        ball.left = parseInt(ball.left) - num + 'px';
+    }
+</script>
+</body>
+</html>
